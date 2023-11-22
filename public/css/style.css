@@ -3,7 +3,7 @@ html {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #ffffff;
+  color: #444;
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
