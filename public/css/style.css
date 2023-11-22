@@ -3,7 +3,7 @@ html {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #777;
+  color: #ffffff;
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
@@ -66,7 +66,7 @@ hr {
   width: 70px;
   text-align: center;
   position: relative;
-  background: #1e7a46;
+  /* background: #1e7a46; */
   margin-bottom: 20px;
   border: 0;
 }
@@ -167,7 +167,7 @@ hr {
   text-transform: uppercase;
   color: #000000;
   /* background-color: #5ca9fb; */
-  background-image: linear-gradient(to right, #949f9a 0%, #8d8888 100%);
+  /* background-image: linear-gradient(to right, #949f9a 0%, #8d8888 100%); */
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -225,6 +225,92 @@ img {
   -o-background-size: cover;
   /* position: relative; */
 }
+
+/* Add this to your CSS file */
+
+#header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column; /* or row, based on your layout */
+  align-items: center; /* or other alignment properties */
+  justify-content: center; /* or other justification properties */
+}
+
+.intro-image-container {
+  max-width: 100%;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.intro-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Your mobile-specific styles here */
+  .intro img {
+    /* Mobile-specific styles for the image */
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  text-align: center;
+  color: #fff;
+}
+
+.intro-text h1 {
+  font-size: 36px;
+}
+
+.intro-text p {
+  font-size: 16px;
+}
+
+.btn-custom {
+  /* Add your button styles here */
+  background-color: #ffffff;
+}
+
+/* Media Query for Smaller Screens (e.g., phones) */
+@media only screen and (max-width: 767px) {
+  .intro-text {
+    padding: 20px;
+  }
+
+  .intro-text h1 {
+    font-size: 28px;
+  }
+
+  .intro-text p {
+    font-size: 14px;
+  }
+}
+
 /* Add a media query for screens with a maximum width of 768px */
 @media (max-width: 600px) {
   .intro {
@@ -617,7 +703,8 @@ label {
   border-bottom: 2px solid #608dfd;
 }
 /* login */
-.login-button,i.login-button{
+.login-button,
+i.login-button {
   background: none;
   color: rgb(0, 0, 0);
   border: none;

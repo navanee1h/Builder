@@ -1,16 +1,17 @@
 import React from "react";
-import image1 from "../assets/images/image1.jpg";
+// import bgslide from "../../src/vid/bgslide.mp4";
+// import { Grid} from '@mui/material';
+// import PostSlider from 'ui-component/Slider';
+
+// import img3 from "../assets/images/img3.jpg";
 
 export const Header = (props) => {
   return (
     <header id="header">
       <div className="intro">
-        <img
-          src={image1}
-          alt="image1.jpg"
-          className="responsive-image" // Add this class for styling
-        />
-        <div className="overlay">
+        <div className="overlay headerimage" 
+        // style={{background: `url(${img3}) no-repeate center center/cover`}}
+        >
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
@@ -19,10 +20,7 @@ export const Header = (props) => {
                   <span></span>
                 </h1>
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                <a
-                  href="#features"
-                  className="btn btn-custom btn-lg page-scroll"
-                >
+                <a href="#about" className="btn btn-custom btn-lg page-scroll">
                   Learn More
                 </a>{" "}
               </div>
