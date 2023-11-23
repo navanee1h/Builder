@@ -6,11 +6,15 @@ import React from "react";
 // import img3 from "../assets/images/img3.jpg";
 
 export const Header = (props) => {
+  // Define the background image URL
+  const backgroundImageUrl = "url('src/assets/images/image1.jpg')";
+
   return (
     <header id="header">
       <div className="intro">
-        <div className="overlay headerimage" 
-        // style={{background: `url(${img3}) no-repeate center center/cover`}}
+        <div
+          className="overlay headerimage"
+          style={{ background: backgroundImageUrl, backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundSize: 'cover' }}
         >
           <div className="container">
             <div className="row">
