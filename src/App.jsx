@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
-import { Team } from "./components/Team";
-import { Contact } from "./components/contact";
+import { Navigation } from "./components/UserComponents/navigation";
+import { Header } from "./components/UserComponents/header";
+import { About } from "./components/UserComponents/about";
+import { Services } from "./components/UserComponents/services";
+import { Gallery } from "./components/UserComponents/gallery";
+import { Team } from "./components/UserComponents/Team";
+import { Contact } from "./components/UserComponents/contact";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import Login from "./components/loginPage";
+import Login from "./components/UserComponents/loginPage";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 
@@ -24,6 +24,7 @@ const App = () => {
   }, []);
 
   return (
+    
     <Router>
       <div>
         <Navigation id="rootDiv" />
@@ -35,7 +36,7 @@ const App = () => {
         <Contact data={PageData.Contact} />
 
         <Routes>
-          <Route path="/login" element={<Login data={PageData.Login} />} />
+          <Route path="/login" element={<Login />} />{" "}
         </Routes>
       </div>
     </Router>
