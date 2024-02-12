@@ -1,5 +1,4 @@
 import { Card, Modal } from "@mui/material";
-
 import React, { useState } from "react";
 import ContainerCard from "../../Ui-Components/Cards/ContainerCard";
 import backgroundImage from "../../assets/images/wepik.jpeg";
@@ -16,9 +15,6 @@ const Login = ({ open, handleClose }) => {
 
   return (
     <>
-      {/* <Button variant="outlined" onClick={handleOpenDialog}>
-        Open Login Dialog
-      </Button> */}
       <Modal open={open} onClose={handleClose}>
         <ContainerCard>
           <div
@@ -34,26 +30,25 @@ const Login = ({ open, handleClose }) => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    // gap: "1rem",
                     flexDirection: "column",
                   }}>
                   <h2>Login</h2>
 
-                  <div className="form-group" style={{ width: "35rem" }}>
+                  <div className="form-group">
                     <label style={{ fontWeight: "bold" }}>Username</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter your username"
-                      value={username}
-                      onChange={(e) => setUsername(e.target.value)}
-                    />
+                    <div style={{ width: "30rem", position: "relative" }}>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Enter your username"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                      />
+                    </div>
                   </div>
-                  <div
-                    className="form-group"
-                    style={{ width: "35rem", position: "relative" }}>
+                  <div className="form-group">
                     <label style={{ fontWeight: "bold" }}>Password</label>
-                    {/* <div style={{ display: "flex", alignItems: "center" }}> */}
+                    <div style={{ width: "30rem", position: "relative" }}>
                       <input
                         type={showPassword ? "text" : "password"}
                         className="form-control"
@@ -72,7 +67,7 @@ const Login = ({ open, handleClose }) => {
                         onClick={handleTogglePasswordVisibility}>
                         {showPassword ? <VisibilityOff /> : <Visibility />}
                       </div>
-                    {/* </div> */}
+                    </div>
                   </div>
                   <button type="button" className="btn btn-primary">
                     Login

@@ -17,7 +17,7 @@
       "Innovative Design-Build Approach",
       "Proven Success"
     ]
-  },
+  },                                                                                                                                              
   "Gallery": [
     {
       "title": "Image",
@@ -87,11 +87,11 @@
       "text": "Our clear and fair contracts set the stage for a successful and collaborative partnership."
     },
     {
-      "icon": "fa fa-television",
+      "icon": "fa fa-building",
       "name": "INTERIOR",
       "text": "Elevate your space with our expert interior design. We create inviting and functional interiors that complement your architectural vision."
     }
-  ],
+  ], 
   "Testimonials": [
     {
       "img": "img/testimonials/01.jpg",
